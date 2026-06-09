@@ -10,7 +10,7 @@ The core objective of this codebase is not to present an optimized alpha strateg
 
 To maintain absolute analytical integrity, the engine incorporates specific production-grade engineering principles:
 
-* **Vectorized Processing Environment:** Leverages NumPy and Pandas matrix operations to compute portfolio metrics across the entire historical horizon simultaneously, completely bypassing slow, performance-heavy iterative loops (`for` loops).
+* **Vectorized Processing Environment:** Leverages Pandas matrix operations to compute portfolio metrics across the entire historical horizon simultaneously, completely bypassing slow, performance-heavy iterative loops (`for` loops).
 * **Look-Ahead Bias Mitigation:** Implements a strict chronological execution lag on alpha signals (row-shifting triggers) to ensure the framework never accidentally "peeks" into tomorrow's data to make today's trade.
 * **Automated Risk Mapping:** Programmed with continuous peak-tracking arithmetic to dynamically map real-time portfolio drawdown exposure across fluctuating market regimes.
 
